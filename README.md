@@ -26,6 +26,8 @@ yarn add bound-decorator
 Simply add `@bound` to the method you want to be bound:
 
 ```js
+import bound from 'bound-decorator'
+
 @bound
 handleClick() {}
 ```

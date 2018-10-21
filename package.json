@@ -1,6 +1,6 @@
 {
   "name": "bound-decorator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Decorator for creating bound methods",
   "main": "src/bound.js",
   "repository": {
