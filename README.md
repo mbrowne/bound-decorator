@@ -51,11 +51,11 @@ class Counter extends React.Component {
 }
 ```
 
-See also the [demo](https://github.com/mbrowne/bound-decorator/demo) directory.
+See also the [demo](https://github.com/mbrowne/bound-decorator/tree/master/demo) directory.
 
 ## Motivation
 
-See [MOTIVATION.md](https://github.com/mbrowne/bound-decorator/MOTIVATION.md)
+See [MOTIVATION.md](https://github.com/mbrowne/bound-decorator/blob/master/MOTIVATION.md)
 
 ## License
 
