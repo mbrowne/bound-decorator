@@ -1,0 +1,47 @@
+{
+  "name": "bound-decorator",
+  "version": "1.0.0",
+  "description": "Decorator for creating bound methods",
+  "main": "src/bound.js",
+  "repository": {
+    "type": "git",
+    "url": "mbrowne/bound-decorator.git"
+  },
+  "keywords": [
+    "bound",
+    "bind",
+    "autobound",
+    "autobind",
+    "methods",
+    "decorator"
+  ],
+  "author": "Matt Browne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbrowne/bound-decorator/issues"
+  },
+  "homepage": "https://github.com/mbrowne/bound-decorator#readme",
+  "typings": "src/bound.d.ts",
+  "scripts": {
+    "demo": "babel-node demo/node",
+    "build-demo:node": "babel demo/node.js -o demo/node.dist.js",
+    "build-demo:browser": "NODE_ENV=browserdemo babel demo/browser.js -o demo/browser.dist.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "husky": "^1.1.2",
+    "prettier": "^1.14.3",
+    "pretty-quick": "^1.8.0"
+  }
+}

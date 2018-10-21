@@ -1,0 +1,14 @@
+<!--
+To run this demo, first run:
+    npm run build-demo:browser
+-->
+
+<body>
+    <num-counter>
+</body>
+<script>
+    // bound.js is a CommonJS module to avoid the need for a build step for the decorator itself, so we need
+    // this little workaround
+    window.exports = {}
+</script>
+<script type="module" src="browser.dist.js"></script>
