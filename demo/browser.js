@@ -3,7 +3,7 @@
 import '../src/bound.js'
 const bound = window.exports.default
 
-// Example adapted from example in https://github.com/tc39/proposal-decorators
+// Adapted from example in https://github.com/tc39/proposal-decorators
 class Counter extends HTMLElement {
     count = 0
 

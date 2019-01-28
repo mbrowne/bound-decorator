@@ -168,31 +168,6 @@ class Counter extends React.Component {
 
 It's generally agreed that concise, expressive code is preferable as long as it doesn't hide important details. From this perspective, versions B and D have the advantage. Version D (using the decorator) is often preferable to version B for the reasons explained above. Version C is the next most concise version that also avoids the issues with arrow functions, but it still requires that you call `bind()` manually for every function you want to bind. So version D wins both for conciseness and avoiding issues with arrow functions.
 
-Having said all that, the `@bound` decorator does not perfectly prevent all issues relating to bound functions and inheritance. For example, consider this:
-
-```js
-class Parent {
-    @bound
-    foo() {
-        console.log('Parent')
-    }
-}
-
-class Child extends Parent {
-    constructor() {
-        super()
-        // Logs "Parent", not "Child"
-        this.foo()
-    }
-
-    foo() {
-        console.log('Child')
-    }
-}
-```
-
-But there are still significantly fewer prototype and inheritance-related issues with the `@bound` decorator than there are with fields initialized to arrow functions.
-
 ### Counterarguments
 
 Some people argue that the above issues are not sufficient reason to avoid arrow functions in class fields entirely, depending on your app. Obviously, in parts of your app where you are using inheritance, the arguments against arrow functions are more persuasive. There are also performance considerations when choosing between the two approaches. The performance differences are usually negligible but can be more significant in cases where you have hundreds or thousands of instances of a class. If you were to simply use arrow functions everywhere without thinking about the consequences, that could cause problems. Of course the same would be true of careless use of the `@bound` decorator. A full comparison of all the pros and cons in different situations is beyond the scope of this article. Suffice it to say that arrow functions are not an ideal solution in all situations, and the motivation to want a `@bound` decorator is realistic.
