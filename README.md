@@ -1,8 +1,10 @@
 # @bound decorator
 
-Decorator for creating bound methods using Babel 7+ (sometimes referred to as "autobinding"). Should work in TypeScript too once the current version of the [decorators proposal](https://github.com/tc39/proposal-decorators) is implemented.
+Decorator for creating bound methods using Babel 7 (sometimes referred to as "autobinding").
 
 > Note: This decorator is not compatible with `legacy` mode for decorators, regardless of your Babel version.
+>
+> Also note that the ECMAScript [decorators proposal](https://github.com/tc39/proposal-decorators) is in the process of being redesigned. This redesign first became public in early 2019 and is still ongoing. As of January 2020, [@babel/plugin-proposal-decorators](https://babeljs.io/docs/en/babel-plugin-proposal-decorators) is still based on the original stage 2 proposal, so this library is still fully compatible with it.
 
 For Babel 6 and for TypeScript (at least as of 2018), you might be interested in these alternatives:
 
