@@ -1,10 +1,16 @@
 <!--
 To run this demo, first run:
     npm run build-demo:browser
+
+Then start any HTTP server from the root directory, e.g.:
+    npx lite-server
+
+And go to the demo page, e.g.:
+    http://localhost:3000/demo/browser.html
 -->
 
 <body>
-    <num-counter>
+    <num-counter />
 </body>
 <script>
     // bound.js is a CommonJS module to avoid the need for a build step for the decorator itself, so we need
